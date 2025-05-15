@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportHub - Спортзали</title>
+    <link rel="stylesheet" href="./css/gym.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a class="logo" href="./index.html">Sport<span>Hub</span></a>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Головна</a></li>
+              <li><a href="./gym.html">Спортзали</a></li>
+            </ul>
+          </nav>
+          <div class="auth-buttons" id="auth-buttons">
+            <a href="./login.html" class="btn btn-outline">Вхід</a>
+            <a href="./register.html" class="btn btn-primary">Реєстрація</a>
+          </div>
+          <div class="user-profile" id="user-profile" style="display: none">
+            <span id="user-name" class="user-name-dropdown"></span>
+            <div class="user-dropdown" id="user-dropdown" style="display: none">
+              <a href="./orders.html">Мої замовлення</a>
+              <a href="./admin-report.html" id="admin-report-link" style="display: none">Звіти</a>
+              <a href="#" id="logout-btn">Вийти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <div class="page-title">
+          <div class="breadcrumbs"><a href="./index.html">Головна</a> <span>›</span> <a href="./gym.html">Спортзали</a></div>
+          <h1>Спортзали</h1>
+          <p>Знайдіть ідеальний спортзал для ваших тренувань</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="filters-and-gyms">
+        <div class="filters">
+          <div class="search-box">
+            <input type="text" placeholder="Пошук спортзалів..." />
+          </div>
+
+          <div class="filter-section" id="type-section">
+            <h3>Тип</h3>
+            <div class="filter-options" id="type-options"></div>
+          </div>
+
+          <div class="filter-section">
+            <h3>Рейтинг</h3>
+            <div class="filter-options">
+              <label> <input type="radio" name="rating" value="5" /> 5 зірок </label>
+              <label> <input type="radio" name="rating" value="4" /> 4+ зірок </label>
+              <label> <input type="radio" name="rating" value="3" /> 3+ зірок </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="gyms">
+          <div class="results-header">
+            <div class="results-count"></div>
+            <div class="sort-options">
+              <span>Сортувати:</span>
+              <select id="sort-select">
+                <option>За рейтингом</option>
+                <option>За ціною (від низької до високої)</option>
+                <option>За ціною (від високої до низької)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="gym-grid"></div>
+
+          <div class="pagination">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>SportHub</h3>
+            <p>Платформа для бронювання спортзалів та тренувань, яка об'єднує тренерів, клієнтів та спортзали в єдину екосистему.</p>
+          </div>
+          <div class="footer-column">
+            <h3>Навігація</h3>
+            <ul>
+              <li><a href="./index.html">Головна</a></li>
+              <li><a href="./gyms.html">Спортзали</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Для бізнесу</h3>
+            <ul>
+              <li><a href="#">Приєднати спортзал</a></li>
+              <li><a href="#">Партнерська програма</a></li>
+              <li><a href="#">Для тренерів</a></li>
+              <li><a href="#">Аналітика</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Контакти</h3>
+            <ul>
+              <li><a href="mailto:info@sporthub.ua">info@sporthub.ua</a></li>
+              <li><a href="tel:+380501234567">+38 (050) 123-45-67</a></li>
+              <li><a href="#">м. Київ, вул. Спортивна, 10</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023-2025 SportHub. Всі права захищені.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/data.js"></script>
+    <script src="./js/gym.js"></script>
+    <script src="./js/auth.js"></script>
+  </body>
+</html>

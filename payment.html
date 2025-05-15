@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оплата</title>
+    <link rel="stylesheet" href="./css/booking.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a class="logo" href="./index.html">Sport<span>Hub</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="payment-container">
+      <div class="payment-form">
+        <h2>Оплата</h2>
+        <form id="payment-form">
+          <label for="card-number">Номер картки:</label>
+          <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required />
+
+          <label for="expiry-date">Термін дії:</label>
+          <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required />
+
+          <label for="cvv">CVV:</label>
+          <input type="password" id="cvv" name="cvv" placeholder="123" required />
+
+          <label for="payment-method">Спосіб оплати:</label>
+          <select id="payment-method" name="payment-method" required>
+            <option value="card">Кредитна картка</option>
+            <option value="bank">Онлайн-банкінг</option>
+          </select>
+
+          <div id="order-summary" class="order-summary">
+            <p><b>Вартість:</b> <span id="summary-price"></span></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Оплатити</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023-2025 SportHub. Всі права захищені.</p>
+      </div>
+    </footer>
+
+    <script src="./js/payment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  </body>
+</html>
