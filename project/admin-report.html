@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Звіти адміністратора</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a class="logo" href="./index.html">Sport<span>Hub</span></a>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Головна</a></li>
+              <li><a href="./gym.html">Спортзали</a></li>
+            </ul>
+          </nav>
+          <div class="user-profile" id="user-profile" style="display: none">
+            <span id="user-name" class="user-name-dropdown"></span>
+            <div class="user-dropdown" id="user-dropdown" style="display: none">
+              <a href="./orders.html">Мої замовлення</a>
+              <a href="#" id="logout-btn">Вийти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <h1>Звіти адміністратора</h1>
+      <div class="report-controls">
+        <label
+          >Тип звіту:
+          <select id="report-type">
+            <option value="finance">Фінансовий</option>
+            <option value="attendance">Відвідуваність</option>
+          </select>
+        </label>
+        <label
+          >Період: <input type="date" id="date-from" /> —
+          <input type="date" id="date-to" />
+        </label>
+        <label
+          >Локація:
+          <select id="location-filter">
+            <option value="">Всі локації</option>
+          </select>
+        </label>
+        <button class="btn btn-primary" id="generate-report">Згенерувати звіт</button>
+      </div>
+      <div id="report-result" style="margin-top: 40px"></div>
+    </main>
+    <script src="./js/auth.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/admin-report.js"></script>
+  </body>
+</html>

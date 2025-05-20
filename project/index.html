@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>SportHub - Єдина платформа бронювання спортзалів</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a class="logo" href="./index.html">Sport<span>Hub</span></a>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Головна</a></li>
+              <li><a href="./gym.html">Спортзали</a></li>
+            </ul>
+          </nav>
+          <div class="auth-buttons" id="auth-buttons">
+            <a href="./login.html" class="btn btn-outline">Вхід</a>
+            <a href="./register.html" class="btn btn-primary">Реєстрація</a>
+          </div>
+          <div class="user-profile" id="user-profile" style="display: none">
+            <span id="user-name" class="user-name-dropdown"></span>
+            <div class="user-dropdown" id="user-dropdown" style="display: none">
+              <a href="./orders.html">Мої замовлення</a>
+              <a href="./admin-report.html" id="admin-report-link" style="display: none">Звіти</a>
+              <a href="#" id="logout-btn">Вийти</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Бронювання спортзалів у декілька кліків</h1>
+          <p>SportHub - це єдина платформа для бронювання тренувань, управління розкладом і відстеження прогресу. Починайте тренуватися з нами вже сьогодні!</p>
+          <a href="./gym.html" class="btn btn-primary">Знайти тренування</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Наші можливості</h2>
+          <p>SportHub пропонує повний набір інструментів для спортзалів, тренерів та відвідувачів</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📅</div>
+            <h3>Система бронювання</h3>
+            <p>Зручна система для бронювання місць у спортзалах онлайн із миттєвим підтвердженням</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🗂️</div>
+            <h3>Керування бронюваннями</h3>
+            <p>Легко переглядайте, скасовуйте або змінюйте свої бронювання у зручному кабінеті користувача</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💳</div>
+            <h3>Онлайн-платежі</h3>
+            <p>Безпечна система оплати для бронювання та передплати тренувань онлайн</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <div class="container">
+        <div class="section-title">
+          <h2>Як це працює</h2>
+          <p>Все просто — забронюйте спортзал онлайн за кілька хвилин</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Оберіть спортзал</h3>
+            <p>Перегляньте список доступних залів, скористайтеся пошуком і фільтрами для зручного вибору.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Забронюйте час</h3>
+            <p>Вкажіть дату та час тренування, підтвердьте бронювання — і місце за вами!</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Керуйте бронюванням</h3>
+            <p>За потреби ви можете скасувати або змінити своє бронювання у особистому кабінеті.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <h2>Відгуки клієнтів</h2>
+          <p>Що говорять наші клієнти про SportHub</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              <p>SportHub повністю змінив підхід до організації тренувань у нашому спортзалі. Тепер все автоматизовано, і ми можемо зосередитися на якості послуг для клієнтів.</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="/api/placeholder/50/50" alt="Олександр Петренко" />
+              </div>
+              <div class="author-info">
+                <h4>Олександр Петренко</h4>
+                <p>Власник спортзалу "FitPro"</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              <p>Дуже зручно бронювати тренування через SportHub. Я економлю багато часу і завжди впевнений, що моє місце на тренуванні зарезервовано.</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="/api/placeholder/50/50" alt="Іван Мельник" />
+              </div>
+              <div class="author-info">
+                <h4>Іван Мельник</h4>
+                <p>Клієнт SportHub</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              <p>Я дуже задоволений платформою SportHub. Вона допомагає мені легко знаходити тренування, які відповідають моєму графіку та цілям.</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <img src="/api/placeholder/50/50" alt="Анна Левченко" />
+              </div>
+              <div class="author-info">
+                <h4>Анна Левченко</h4>
+                <p>Користувач SportHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="cta-section">
+      <div class="container">
+        <h2>Готові почати?</h2>
+        <p>Приєднуйтеся до SportHub сьогодні та отримайте доступ до найкращих спортзалів та тренерів у вашому місті</p>
+        <a href="./register.html" class="btn-cta">Зареєструватися безкоштовно</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>SportHub</h3>
+            <p>Платформа для бронювання спортзалів та тренувань, яка об'єднує тренерів, клієнтів та спортзали в єдину екосистему.</p>
+          </div>
+          <div class="footer-column">
+            <h3>Навігація</h3>
+            <ul>
+              <li><a href="./index.html">Головна</a></li>
+              <li><a href="./gym.html">Спортзали</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Для бізнесу</h3>
+            <ul>
+              <li><a href="#">Приєднати спортзал</a></li>
+              <li><a href="#">Партнерська програма</a></li>
+              <li><a href="#">Для тренерів</a></li>
+              <li><a href="#">Аналітика</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Контакти</h3>
+            <ul>
+              <li><a href="mailto:info@sporthub.ua">info@sporthub.ua</a></li>
+              <li><a href="tel:+380501234567">+38 (050) 123-45-67</a></li>
+              <li><a href="#">м. Київ, вул. Спортивна, 10</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023-2025 SportHub. Всі права захищені.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/auth.js"></script>
+  </body>
+  <script>
+    const currentUser = localStorage.getItem("currentUser");
+    if (currentUser) {
+      const cta = document.getElementById("cta-section");
+      if (cta) cta.style.display = "none";
+    }
+  </script>
+</html>

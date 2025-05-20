@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportHub - Вхід</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="auth-page">
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a class="logo" href="./index.html">Sport<span>Hub</span></a>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Головна</a></li>
+              <li><a href="./gym.html">Спортзали</a></li>
+              <li><a href="./register.html">Реєстрація</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Вхід</h1>
+        <p>Увійдіть до свого облікового запису, щоб продовжити</p>
+      </div>
+    </section>
+
+    <main class="auth-container">
+      <form class="auth-form">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Ваш email" required />
+
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" placeholder="Ваш пароль" required />
+
+        <button type="submit" class="btn btn-primary">Увійти</button>
+        <p>Немає облікового запису? <a href="./register.html">Зареєструватися</a></p>
+      </form>
+      <div
+        id="custom-message"
+        style="
+          display: none;
+          position: fixed;
+          top: 30px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: #fff;
+          border: 1px solid #2196f3;
+          padding: 18px 32px;
+          border-radius: 8px;
+          box-shadow: 0 2px 16px rgba(33, 150, 243, 0.15);
+          z-index: 9999;
+          font-size: 18px;
+          color: #222;
+        "
+      ></div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023-2025 SportHub. Всі права захищені.</p>
+      </div>
+    </footer>
+    <script src="./js/users.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
