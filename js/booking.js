@@ -1,16 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   if (!currentUser) {
-    alert("Щоб забронювати зал, увійдіть у свій акаунт!");
-    window.location.href = "./login.html";
+    showMessage("Щоб забронювати зал, увійдіть у свій акаунт!");
+    setTimeout(() => {
+      window.location.href = "./login.html";
+    }, 1600);
     return;
   }
 
   const selectedGym = JSON.parse(localStorage.getItem("selectedGym"));
 
   if (!selectedGym) {
-    alert("Спортзал не вибрано!");
-    window.location.href = "./gym.html";
+    showMessage("Спортзал не вибрано!");
+    setTimeout(() => {
+      window.location.href = "./gym.html";
+    }, 1600);
     return;
   }
 
@@ -97,4 +101,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.location.href = "./payment.html";
   });
+
+  function showMessage(text) {
+    let msg = document.getElementById("custom-message");
+    if (!msg) {
+      msg = document.createElement("div");
+      msg.id = "custom-message";
+      msg.style.cssText =
+        "display:none;position:fixed;top:30px;left:50%;transform:translateX(-50%);background:#fff;border:1px solid #2196f3;padding:18px 32px;border-radius:8px;box-shadow:0 2px 16px rgba(33,150,243,0.15);z-index:9999;font-size:18px;color:#222;";
+      document.body.appendChild(msg);
+    }
+    msg.textContent = text;
+    msg.style.display = "block";
+    setTimeout(() => {
+      msg.style.display = "none";
+    }, 1500);
+  }
 });

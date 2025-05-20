@@ -109,6 +109,18 @@ function displayGyms(page) {
     `;
 
     gymCard.querySelector(".book-btn").addEventListener("click", () => {
+      const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+      if (!currentUser) {
+        showMessage("Щоб забронювати зал, увійдіть або зареєструйтесь!");
+        setTimeout(() => {
+          window.location.href = "./register.html";
+        }, 1800);
+        return;
+      }
+      if (currentUser.role === "admin") {
+        showMessage("Адміністратор не може бронювати спортзали.");
+        return;
+      }
       localStorage.setItem("selectedGym", JSON.stringify(gym));
       window.location.href = "./booking.html";
     });
@@ -160,6 +172,16 @@ function sortGyms() {
 function getPrice(priceStr) {
   const match = priceStr.match(/\d+/);
   return match ? parseInt(match[0], 10) : 0;
+}
+
+function showMessage(text) {
+  const msg = document.getElementById("custom-message");
+  if (!msg) return;
+  msg.textContent = text;
+  msg.style.display = "block";
+  setTimeout(() => {
+    msg.style.display = "none";
+  }, 2500);
 }
 
 renderTypeOptions();

@@ -6,7 +6,7 @@ const gyms = [
     rating: 5.0,
     features: ["Тренажерний зал", "Кросфіт", "Тренери"],
     description: "Сучасний преміум спортзал з великим вибором тренажерів, просторою зоною для кросфіту та професійними тренерами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 23:00",
   },
   {
@@ -16,7 +16,7 @@ const gyms = [
     rating: 4.8,
     features: ["Йога", "Медитація", "Пілатес"],
     description: "Затишна студія йоги з різноманітними напрямками практик та досвідченими інструкторами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 21:00",
   },
   {
@@ -26,7 +26,7 @@ const gyms = [
     rating: 4.7,
     features: ["Басейн", "Аквааеробіка", "Сауна"],
     description: "Елітний спортивний комплекс з басейном, аквааеробікою та різноманітними водними програмами для дорослих і дітей.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 22:00",
   },
   {
@@ -36,7 +36,7 @@ const gyms = [
     rating: 4.9,
     features: ["Тренажерний зал", "Силові тренування"],
     description: "Ідеальне місце для любителів важкої атлетики та силових тренувань.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 22:00",
   },
   {
@@ -46,7 +46,7 @@ const gyms = [
     rating: 4.6,
     features: ["Спа", "Масаж", "Йога"],
     description: "Центр здоров'я та релаксації з професійними послугами спа та масажу.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "09:00 - 20:00",
   },
   {
@@ -56,7 +56,7 @@ const gyms = [
     rating: 4.7,
     features: ["Кросфіт", "Групові тренування"],
     description: "Спеціалізований зал для кросфіту з професійними тренерами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 22:00",
   },
   {
@@ -66,7 +66,7 @@ const gyms = [
     rating: 4.8,
     features: ["Тренажерний зал", "Силові тренування", "Кардіо"],
     description: "Сучасний тренажерний зал з усім необхідним обладнанням для тренувань.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 23:00",
   },
   {
@@ -76,7 +76,7 @@ const gyms = [
     rating: 4.9,
     features: ["Йога", "Медитація"],
     description: "Затишна студія для практики йоги та медитації.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 21:00",
   },
   {
@@ -86,7 +86,7 @@ const gyms = [
     rating: 4.6,
     features: ["Басейн", "Сауна"],
     description: "Комплекс з басейном та сауною для повного релаксу.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 22:00",
   },
   {
@@ -96,7 +96,7 @@ const gyms = [
     rating: 4.7,
     features: ["Тренажерний зал", "Кардіо"],
     description: "Міський спортзал з сучасним обладнанням для тренувань.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 23:00",
   },
   {
@@ -106,7 +106,7 @@ const gyms = [
     rating: 4.9,
     features: ["Тренажерний зал", "Спа", "Персональні тренування"],
     description: "Елітний фітнес-клуб з преміальними послугами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 23:00",
   },
   {
@@ -116,7 +116,7 @@ const gyms = [
     rating: 4.8,
     features: ["Групові тренування", "Дитячі програми"],
     description: "Фітнес-клуб для всієї родини з програмами для дітей та дорослих.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 21:00",
   },
   {
@@ -126,7 +126,7 @@ const gyms = [
     rating: 4.7,
     features: ["Басейн", "Аквааеробіка"],
     description: "Спортивний комплекс з аквааеробікою та басейном.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 22:00",
   },
   {
@@ -136,7 +136,7 @@ const gyms = [
     rating: 4.8,
     features: ["Тренажерний зал", "Персональні тренування"],
     description: "Професійний спортзал з індивідуальними тренуваннями.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 23:00",
   },
   {
@@ -146,7 +146,7 @@ const gyms = [
     rating: 4.9,
     features: ["Йога", "Розтяжка"],
     description: "Студія для занять йогою та розтяжкою.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 21:00",
   },
   {
@@ -156,7 +156,7 @@ const gyms = [
     rating: 4.7,
     features: ["Кардіо", "Силові тренування"],
     description: "Фітнес-клуб для швидких та ефективних тренувань.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 22:00",
   },
   {
@@ -166,7 +166,7 @@ const gyms = [
     rating: 4.8,
     features: ["Йога", "Медитація", "Спа"],
     description: "Студія для гармонії тіла та душі.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "09:00 - 20:00",
   },
   {
@@ -176,7 +176,7 @@ const gyms = [
     rating: 4.6,
     features: ["Групові тренування", "Кардіо"],
     description: "Фітнес-клуб для активного способу життя.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 22:00",
   },
   {
@@ -186,7 +186,7 @@ const gyms = [
     rating: 4.9,
     features: ["Йога", "Пілатес"],
     description: "Студія для досягнення балансу тіла та розуму.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 21:00",
   },
   {
@@ -196,7 +196,7 @@ const gyms = [
     rating: 4.7,
     features: ["Тренажерний зал", "Кардіо"],
     description: "Спортзал для енергійних тренувань.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 23:00",
   },
   {
@@ -206,7 +206,7 @@ const gyms = [
     rating: 4.8,
     features: ["Басейн", "Сауна"],
     description: "Комплекс для водного відпочинку та релаксації.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 22:00",
   },
   {
@@ -216,7 +216,7 @@ const gyms = [
     rating: 4.6,
     features: ["Групові тренування", "Кардіо"],
     description: "Фітнес-клуб для веселих та ефективних тренувань.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 22:00",
   },
   {
@@ -226,7 +226,7 @@ const gyms = [
     rating: 4.9,
     features: ["Йога", "Медитація"],
     description: "Студія для досягнення внутрішнього спокою.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 21:00",
   },
   {
@@ -236,7 +236,7 @@ const gyms = [
     rating: 4.7,
     features: ["Басейн", "Аквааеробіка"],
     description: "Комплекс для професійного плавання та аквааеробіки.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 22:00",
   },
   {
@@ -246,7 +246,7 @@ const gyms = [
     rating: 4.8,
     features: ["Тренажерний зал", "Кардіо"],
     description: "Міський спортзал з сучасним обладнанням.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 23:00",
   },
   {
@@ -256,7 +256,7 @@ const gyms = [
     rating: 4.9,
     features: ["Спа", "Масаж", "Персональні тренування"],
     description: "Елітний центр здоров'я з преміальними послугами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "09:00 - 21:00",
   },
   {
@@ -266,7 +266,7 @@ const gyms = [
     rating: 4.8,
     features: ["Групові тренування", "Дитячі програми"],
     description: "Фітнес-клуб для всієї родини.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 21:00",
   },
   {
@@ -276,7 +276,7 @@ const gyms = [
     rating: 4.7,
     features: ["Басейн", "Сауна"],
     description: "Комплекс для водного відпочинку.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 22:00",
   },
   {
@@ -286,7 +286,7 @@ const gyms = [
     rating: 4.8,
     features: ["Тренажерний зал", "Персональні тренування"],
     description: "Професійний спортзал з індивідуальними тренуваннями.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 23:00",
   },
   {
@@ -296,7 +296,7 @@ const gyms = [
     rating: 3.8,
     features: ["Тренажерний зал", "Кардіо"],
     description: "Доступний спортзал з базовими тренажерами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 22:00",
   },
   {
@@ -306,7 +306,7 @@ const gyms = [
     rating: 4.0,
     features: ["Йога", "Медитація"],
     description: "Базова студія для практики йоги.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 20:00",
   },
   {
@@ -316,7 +316,7 @@ const gyms = [
     rating: 3.9,
     features: ["Басейн", "Аквааеробіка"],
     description: "Базовий комплекс з басейном.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 21:00",
   },
   {
@@ -326,7 +326,7 @@ const gyms = [
     rating: 3.7,
     features: ["Тренажерний зал", "Силові тренування"],
     description: "Базовий спортзал для силових тренувань.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 21:00",
   },
   {
@@ -336,7 +336,7 @@ const gyms = [
     rating: 4.1,
     features: ["Кросфіт", "Групові тренування"],
     description: "Базовий зал для занять кросфітом.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 21:00",
   },
   {
@@ -346,7 +346,7 @@ const gyms = [
     rating: 3.6,
     features: ["Тренажерний зал", "Кардіо"],
     description: "Стартовий спортзал для початківців.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 20:00",
   },
   {
@@ -356,7 +356,7 @@ const gyms = [
     rating: 4.2,
     features: ["Йога", "Медитація"],
     description: "Екологічна студія для практики йоги.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "09:00 - 20:00",
   },
   {
@@ -366,7 +366,7 @@ const gyms = [
     rating: 4.3,
     features: ["Тренажерний зал", "Кардіо", "Групові тренування"],
     description: "Міський фітнес-центр з різними програмами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 22:00",
   },
   {
@@ -376,7 +376,7 @@ const gyms = [
     rating: 4.4,
     features: ["Групові тренування", "Кардіо"],
     description: "Фітнес-клуб для жінок.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 21:00",
   },
   {
@@ -386,7 +386,7 @@ const gyms = [
     rating: 4.3,
     features: ["Тренажерний зал", "Силові тренування"],
     description: "Спортзал для чоловіків.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 23:00",
   },
   {
@@ -396,7 +396,7 @@ const gyms = [
     rating: 4.2,
     features: ["Басейн", "Сауна"],
     description: "Стандартний комплекс з басейном.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 21:00",
   },
   {
@@ -406,7 +406,7 @@ const gyms = [
     rating: 3.5,
     features: ["Тренажерний зал"],
     description: "Мінімалістичний спортзал з базовими тренажерами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 20:00",
   },
   {
@@ -416,7 +416,7 @@ const gyms = [
     rating: 3.7,
     features: ["Тренажерний зал", "Кардіо"],
     description: "Бюджетний спортзал для студентів.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 22:00",
   },
   {
@@ -426,7 +426,7 @@ const gyms = [
     rating: 4.1,
     features: ["Йога", "Медитація"],
     description: "Студія йоги з вечірніми заняттями.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "16:00 - 22:00",
   },
   {
@@ -436,7 +436,7 @@ const gyms = [
     rating: 4.0,
     features: ["Басейн", "Аквааеробіка"],
     description: "Басейн з ранковими заняттями.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 12:00",
   },
   {
@@ -446,7 +446,7 @@ const gyms = [
     rating: 4.2,
     features: ["Тренажерний зал", "Масаж"],
     description: "Базовий центр здоров'я з масажними послугами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "09:00 - 21:00",
   },
   {
@@ -456,7 +456,7 @@ const gyms = [
     rating: 3.9,
     features: ["Кросфіт"],
     description: "Простий зал для кросфіту.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 21:00",
   },
   {
@@ -466,7 +466,7 @@ const gyms = [
     rating: 4.0,
     features: ["Пілатес"],
     description: "Базова студія для занять пілатесом.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 20:00",
   },
   {
@@ -476,7 +476,7 @@ const gyms = [
     rating: 4.1,
     features: ["Басейн", "Сауна"],
     description: "Комплекс для водного релаксу.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "09:00 - 21:00",
   },
   {
@@ -486,7 +486,7 @@ const gyms = [
     rating: 3.8,
     features: ["Тренажерний зал", "Кардіо"],
     description: "Фітнес-клуб з нічним графіком роботи.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "22:00 - 06:00",
   },
   {
@@ -496,7 +496,7 @@ const gyms = [
     rating: 3.6,
     features: ["Тренажерний зал", "Групові тренування"],
     description: "Спортзал з розширеним графіком у вихідні.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 22:00",
   },
   {
@@ -506,7 +506,7 @@ const gyms = [
     rating: 3.9,
     features: ["Тренажерний зал", "Кардіо"],
     description: "Фітнес-клуб з сезонними програмами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 21:00",
   },
   {
@@ -516,7 +516,7 @@ const gyms = [
     rating: 4.2,
     features: ["Басейн", "Аквааеробіка"],
     description: "Літній басейн з програмами аквааеробіки.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 22:00",
   },
   {
@@ -526,7 +526,7 @@ const gyms = [
     rating: 4.0,
     features: ["Тренажерний зал", "Кардіо"],
     description: "Зимовий спортзал з опаленням.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 22:00",
   },
   {
@@ -536,7 +536,7 @@ const gyms = [
     rating: 4.3,
     features: ["Тренажерний зал", "Групові тренування"],
     description: "Фітнес-клуб для людей старшого віку.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "09:00 - 19:00",
   },
   {
@@ -546,7 +546,7 @@ const gyms = [
     rating: 4.1,
     features: ["Тренажерний зал", "Дитячі програми"],
     description: "Спортзал для молоді та підлітків.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "10:00 - 20:00",
   },
   {
@@ -556,7 +556,7 @@ const gyms = [
     rating: 4.4,
     features: ["Басейн", "Дитячі програми"],
     description: "Басейн для малюків та дітей.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "09:00 - 19:00",
   },
   {
@@ -566,7 +566,7 @@ const gyms = [
     rating: 3.9,
     features: ["Групові тренування", "Кардіо"],
     description: "Фітнес на відкритому повітрі.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 20:00",
   },
   {
@@ -576,7 +576,7 @@ const gyms = [
     rating: 4.0,
     features: ["Тренажерний зал", "Кардіо"],
     description: "Закритий спортзал з кондиціонерами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 22:00",
   },
   {
@@ -586,7 +586,7 @@ const gyms = [
     rating: 4.5,
     features: ["Тренажерний зал", "Спа", "Масаж"],
     description: "Фітнес-клуб для ділових людей.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 23:00",
   },
   {
@@ -596,7 +596,7 @@ const gyms = [
     rating: 3.7,
     features: ["Басейн"],
     description: "Економний басейн для плавання.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "08:00 - 20:00",
   },
   {
@@ -606,7 +606,7 @@ const gyms = [
     rating: 4.9,
     features: ["Тренажерний зал", "Спа", "Масаж", "Персональні тренування"],
     description: "Преміальний фітнес-клуб з усіма послугами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "06:00 - 23:00",
   },
   {
@@ -616,7 +616,7 @@ const gyms = [
     rating: 3.5,
     features: ["Тренажерний зал"],
     description: "Базовий спортзал з тренажерами.",
-    image: "/api/placeholder/400/300",
+    image: "../src/images/gym.jpg",
     hours: "07:00 - 21:00",
   },
 ];

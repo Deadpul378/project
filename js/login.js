@@ -12,14 +12,25 @@ document.querySelector(".auth-form").addEventListener("submit", function (e) {
 
   if (user) {
     localStorage.setItem("currentUser", JSON.stringify(user));
-    alert("Вхід успішний!");
-
-    if (user.role === "admin") {
+    showMessage("Вхід успішний!");
+    setTimeout(() => {
       window.location.href = "./index.html";
-    } else {
-      window.location.href = "./index.html";
-    }
+    }, 1200);
   } else {
-    alert("Невірний email або пароль!");
+    showMessage("Невірний email або пароль!");
+  }
+
+  function showMessage(text) {
+    let msg = document.getElementById("custom-message");
+    if (!msg) {
+      msg = document.createElement("div");
+      msg.id = "custom-message";
+      document.body.appendChild(msg);
+    }
+    msg.textContent = text;
+    msg.style.display = "block";
+    setTimeout(() => {
+      msg.style.display = "none";
+    }, 2500);
   }
 });

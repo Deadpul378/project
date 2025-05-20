@@ -34,6 +34,19 @@
       <h1>Мої замовлення</h1>
       <div id="orders-list"></div>
     </main>
+    <div
+      id="cancel-modal"
+      style="display: none; position: fixed; z-index: 99999; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.35); align-items: center; justify-content: center"
+    >
+      <div style="background: #fff; padding: 32px 24px 24px 24px; border-radius: 12px; max-width: 340px; width: 90%; text-align: center; position: relative">
+        <h3 style="margin-top: 0">Скасувати бронювання?</h3>
+        <p>Ви впевнені, що хочете скасувати це бронювання?</p>
+        <div style="margin-top: 24px">
+          <button id="confirm-cancel-btn" class="btn btn-primary" style="margin-right: 12px">Так, скасувати</button>
+          <button id="close-cancel-modal" class="btn btn-outline">Відмінити</button>
+        </div>
+      </div>
+    </div>
     <script src="./js/orders.js"></script>
     <script src="./js/auth.js"></script>
   </body>

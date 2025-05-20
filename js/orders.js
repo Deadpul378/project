@@ -66,16 +66,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  function showMessage(text) {
+    let msg = document.getElementById("custom-message");
+    if (!msg) {
+      msg = document.createElement("div");
+      msg.id = "custom-message";
+      msg.style.cssText =
+        "display:none;position:fixed;top:30px;left:50%;transform:translateX(-50%);background:#fff;border:1px solid #2196f3;padding:18px 32px;border-radius:8px;box-shadow:0 2px 16px rgba(33,150,243,0.15);z-index:9999;font-size:18px;color:#222;";
+      document.body.appendChild(msg);
+    }
+    msg.textContent = text;
+    msg.style.display = "block";
+    setTimeout(() => {
+      msg.style.display = "none";
+    }, 2000);
+  }
+
+  let cancelIdx = null;
+
   ordersList.addEventListener("click", function (e) {
     const idx = e.target.getAttribute("data-idx");
     if (e.target.classList.contains("cancel-order-btn")) {
-      if (confirm("Ви впевнені, що хочете скасувати це бронювання?")) {
-        userOrders.splice(idx, 1);
-        localStorage.setItem("orders_" + currentUser.email, JSON.stringify(userOrders));
-        renderOrders();
-
-        alert("Бронювання скасовано. Кошти повернено на ваш рахунок.");
-      }
+      cancelIdx = idx;
+      document.getElementById("cancel-modal").style.display = "flex";
+      return;
     }
     if (e.target.classList.contains("edit-order-btn")) {
       const form = document.querySelector(`.edit-order-form[data-idx="${idx}"]`);
@@ -114,6 +128,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  document.getElementById("confirm-cancel-btn").onclick = function () {
+    if (cancelIdx !== null) {
+      userOrders.splice(cancelIdx, 1);
+      localStorage.setItem("orders_" + currentUser.email, JSON.stringify(userOrders));
+      renderOrders();
+      showMessage("Бронювання скасовано. Кошти повернено на ваш рахунок.");
+      cancelIdx = null;
+    }
+    document.getElementById("cancel-modal").style.display = "none";
+  };
+
+  document.getElementById("close-cancel-modal").onclick = function () {
+    document.getElementById("cancel-modal").style.display = "none";
+    cancelIdx = null;
+  };
+
   ordersList.addEventListener("submit", function (e) {
     if (e.target.classList.contains("edit-order-form")) {
       e.preventDefault();
@@ -124,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const today = new Date();
       const selectedDate = new Date(newDate);
       if (selectedDate < new Date(today.getFullYear(), today.getMonth(), today.getDate()) || (newDate === today.toISOString().slice(0, 10) && Number(newTime.split(":")[0]) <= today.getHours())) {
-        alert("Неможливо вибрати минулу дату або час.");
+        showMessage("Неможливо вибрати минулу дату або час.");
         return;
       }
 

@@ -25,7 +25,7 @@
     <main class="auth-container">
       <form class="auth-form">
         <label for="name">Ім'я</label>
-        <input type="text" id="name" name="name" placeholder="Ваше ім'я" required />
+        <input type="text" id="name" name="name" placeholder="Ваше ім'я" required maxlength="12" />
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Ваш email" required />
@@ -36,6 +36,30 @@
         <button type="submit" class="btn btn-primary">Зареєструватися</button>
         <p>Вже маєте обліковий запис? <a href="./login.html">Увійти</a></p>
       </form>
+
+      <div id="verify-section" style="display: none; margin-top: 24px">
+        <label for="verify-code">Підтвердіть email (код надіслано на пошту):</label>
+        <input type="text" id="verify-code" maxlength="6" placeholder="Введіть код" />
+        <button id="verify-btn" class="btn btn-primary" style="margin-top: 10px">Підтвердити</button>
+      </div>
+      <div
+        id="custom-message"
+        style="
+          display: none;
+          position: fixed;
+          top: 30px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: #fff;
+          border: 1px solid #2196f3;
+          padding: 18px 32px;
+          border-radius: 8px;
+          box-shadow: 0 2px 16px rgba(33, 150, 243, 0.15);
+          z-index: 9999;
+          font-size: 18px;
+          color: #222;
+        "
+      ></div>
     </main>
 
     <footer>
