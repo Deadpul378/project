@@ -168,6 +168,59 @@ document.addEventListener("DOMContentLoaded", () => {
         card.querySelector("div:nth-child(3)").innerHTML = `<b>Час:</b> ${newTime}`;
         e.target.style.display = "none";
       }
+
+      const order = userOrders[idx];
+      const ticketData = {
+        user: currentUser.email,
+        gym: order.gym.name || order.gym,
+        date: newDate,
+        time: newTime,
+        orderTime: new Date().toISOString(),
+      };
+      const ticketText = JSON.stringify(ticketData);
+
+      const qr = new QRious({
+        value: ticketText,
+        size: 120,
+      });
+
+      const ticketModal = document.getElementById("ticket-modal");
+      const ticketCanvas = document.getElementById("ticket-canvas");
+      const ctx = ticketCanvas.getContext("2d");
+
+      ctx.clearRect(0, 0, ticketCanvas.width, ticketCanvas.height);
+      ctx.fillStyle = "#fff";
+      ctx.fillRect(0, 0, ticketCanvas.width, ticketCanvas.height);
+
+      ctx.fillStyle = "#222";
+      ctx.font = "bold 22px Segoe UI";
+      ctx.textAlign = "center";
+      ctx.fillText("Електронний квиток", ticketCanvas.width / 2, 40);
+
+      ctx.textAlign = "left";
+      ctx.font = "16px Segoe UI";
+      ctx.fillText("Зал: " + (order.gym.name || order.gym), 30, 80);
+      ctx.fillText("Дата: " + newDate, 30, 110);
+      ctx.fillText("Час: " + newTime, 30, 140);
+      ctx.fillText("Email: " + currentUser.email, 30, 170);
+
+      const qrImg = new window.Image();
+      qrImg.onload = function () {
+        ctx.drawImage(qrImg, 250, 80, 120, 120);
+        ticketModal.style.display = "flex";
+      };
+      qrImg.src = qr.toDataURL();
+
+      document.getElementById("download-ticket-btn").onclick = function () {
+        const link = document.createElement("a");
+        link.download = `ticket_${order.gym.name || order.gym}_${newDate}_${newTime}.png`;
+        link.href = ticketCanvas.toDataURL();
+        link.click();
+      };
+
+      document.getElementById("close-ticket-modal").onclick = function () {
+        ticketModal.style.display = "none";
+      };
     }
   });
 });
